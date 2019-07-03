@@ -4,6 +4,7 @@
             <li class="icons"><router-link :to="{name:'list'}">新闻列表</router-link></li>
             <li class="icons"><router-link :to="{name:'user'}">个人中心</router-link></li>
         </ul>
+        <div>hello</div>
         <router-view />
     </div>
 </template>
