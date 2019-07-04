@@ -3,7 +3,7 @@
         <form  v-if="!isReg">
             <div>用户名：</div>
             <input type="text" v-model="name">
-            <div>密码：</div>密码：
+            <div>密码：</div>
             <input type="password" v-model="password">
             <button type="button" @click="login()">登录</button>
             <button type="button" @click="reg()">注册</button>
