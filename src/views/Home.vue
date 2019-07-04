@@ -1,10 +1,10 @@
 <template>
-    <div>
+    <div class="box">
         <ul class="footer">
             <li class="icons"><router-link :to="{name:'list'}">新闻列表</router-link></li>
             <li class="icons"><router-link :to="{name:'user'}">个人中心</router-link></li>
         </ul>
-        <div>hello</div>
+        <div class="hello">Welcome!</div>
         <router-view />
     </div>
 </template>
@@ -44,6 +44,24 @@
                 background-color: #42b983;
             }
         }
+    }
+    .box{
+        position: relative;
+        width: 98%;
+        height: 500px;
+        /*border: black 1px solid;*/
+    }
+    .hello{
+        position: absolute;
+        width: 160px;
+        height: 40px;
+        top: 50%;
+        left: 50%;
+        font-size: 28px;
+        text-align: center;
+        line-height: 40px;
+        /*background-color:gray;*/
+        margin-left: -80px;
     }
 
 </style>
